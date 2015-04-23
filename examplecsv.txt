@@ -1,0 +1,9 @@
+8
+Jeremy,Jones,Male,8436555061,jonesjk2@g.cofc.edu,1800,william kennerty drive,charleston,sc,29407
+Lary,Bird,Male,1112223333,larybird@email.com,123,warren road,charleston,sc,29406
+Jack,Johnson,Male,2223334444,jackjohnson@email.com,543,something drive,charleston,sc,29405
+Molly,Cryis,Female,78965412396,mollycryis@email.com,458,nowhere ave,mount plesant,sc,21452
+Amy,Jones,Female,1426981425,amyjones@email.com,22,wendy lane,charleston,sc,23654
+Jordan,Hamilton,male,1475622584,jhamilton@email.com,8156485,haywood court,charleston,sc,25415
+Mark,Stanfor,male,5846952145,mstanform@email.gov,8756,fox trot maze road,myrtle beach,sc,25847
+rick,games,male,5676365845,rgames@email.edu,43,nova road,myrtle beach,sc,29576
