@@ -14,7 +14,7 @@ To run the project you have a few options...
 
 there is the CSVInFile which will build the project with the included CSV file. This requires you to put in the path to the csv file as well as the path to where you want to save the output csv file. 
 
-There is also the Application Driver which is basically a console app
+There is also the AppDriver which is basically a console app
 
 Lastly there is the DriverForIO which just reads a file and saves it in a different location. 
 
