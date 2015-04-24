@@ -1,0 +1,12 @@
+To run the project you have a few options...
+
+The best option for running / building the project is to used the ApplicationDriver class.
+	This class will ask for the path to your CSV files for building the project. The CSV file must contain a number as the first entry to tell the program how many lines are in the file. This is a bit of a hack that I plan on fixing soon. 
+	
+	This class also lets you manually add users and games to the project so it also has componets of a console app.
+
+The scond option for a manual build would be the AppDriver
+	This class will allow you to build the project manually. This Class is basically the application as a console app. 
+
+
+When I continue working on the project I will be further developing the ApplicationDriver and the AppDriver will be deleted. 
