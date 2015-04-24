@@ -5,7 +5,7 @@ import java.util.ArrayList;
  */
 public class GameList {
 
-    ArrayList<Game> gameList;
+    private ArrayList<Game> gameList;
 
     public GameList(){
         this.gameList = new ArrayList<Game>();
@@ -28,6 +28,35 @@ public class GameList {
         return output;
     }
 
+    public String printCSV(){
+        String output = "";
 
+        for(Game g: gameList){
+            output += g.printCSV();
+        }
+        return output;
+    }
 
+    public int getLength(){
+        int counter = 0;
+        for(Game g: gameList){
+            counter++;
+        }
+        return counter;
+    }
+
+    public String printLength(){
+        return Integer.toString(getLength());
+    }
+
+    public String appendCSV(int inNumber){
+        int start = inNumber;
+        Game temp;
+        String output = "";
+        for(; start < getLength(); start++){
+            temp = gameList.get(start);
+            output += temp.printCSV() + "\n";
+        }
+        return output;
+    }
 }

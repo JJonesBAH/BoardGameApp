@@ -38,4 +38,10 @@ public class Game {
         this.description = inDescription;
     }
 
+    public String printCSV(){
+        String output = "";
+        output += name + "," + description;
+        return output;
+    }
+
 }

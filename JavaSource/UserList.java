@@ -24,22 +24,11 @@ public class UserList{
         return this.users;
     }
 
-    public String appendCSV(int inNumber){
-        int start = inNumber;
-        User temp;
-        String output = "";
-        for(; start < getListLength(); start++){
-            temp = users.get(start);
-            output += temp.printCSV() + "\n";
-        }
-        return output;
+    public String printLength(){
+      return Integer.toString(getLength());
     }
 
-    public String printListLength(){
-      return Integer.toString(getListLength());
-    }
-
-    public int getListLength() {
+    public int getLength() {
         int lenght = 0;
         if (users.isEmpty()) {
             return lenght;
@@ -160,6 +149,17 @@ public class UserList{
         String output = "";
         for(User u: users){
             output += u.printCSV() + "\n";
+        }
+        return output;
+    }
+
+    public String appendCSV(int inNumber){
+        int start = inNumber;
+        User temp;
+        String output = "";
+        for(; start < getLength(); start++){
+            temp = users.get(start);
+            output += temp.printCSV() + "\n";
         }
         return output;
     }

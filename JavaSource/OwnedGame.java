@@ -26,4 +26,10 @@ public class OwnedGame extends Game {
         this.ownerName = inOwner;
     }
 
+    public String printCSV(){
+        String output = "";
+        output += super.getName() + "," + super.getDescription() + "," + ownerName;
+        return output;
+    }
+
 }
