@@ -4,19 +4,22 @@
 public class GameNight {
 
     private GameLocation gameLocation;
-    private UserList attendanceList;
+    private ComponentList attendanceList;
+    private ComponentList playList;
     private String date;
 
     public GameNight(){
         this.gameLocation = null;
         this.attendanceList = null;
         this.date = null;
+        this.playList = null;
     }
 
-    public GameNight(GameLocation inLocation, UserList inList, String inDate){
+    public GameNight(GameLocation inLocation, ComponentList inList, String inDate, ComponentList inGames){
         this.gameLocation = inLocation;
         this.attendanceList = inList;
         this.date = inDate;
+        this.playList = inGames;
     }
 
     public void setDate(String inDate){
@@ -28,12 +31,12 @@ public class GameNight {
         this.gameLocation = inLocation;
     }
 
-    public void setAttendanceList(UserList inList){
+    public void setAttendanceList(ComponentList inList){
         this.attendanceList = inList;
     }
 
     public String getAttendanceList(){
-        return attendanceList.printUserInfo();
+        return attendanceList.printInfo();
     }
 
     public String getGameLocation(){

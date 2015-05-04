@@ -75,7 +75,7 @@ public class User {
     }
 
     public String printUserInfo(){
-        return "Users Full Name: " + this.getFullName() + "\nUsers contact Info: \n" + contact.getContactInfo();
+        return "\nUsers Full Name: " + this.getFullName() + "\nUsers contact Info: \n" + contact.getContactInfo() + "\n";
     }
 
     public Address getAddress(){
@@ -84,7 +84,7 @@ public class User {
 
     public String printCSV(){
         String output = "";
-        output += fName + "," + lName + "," + usersSex + "," + contact.printCSV();
+        output += fName + "," + lName + "," + usersSex  + "," + contact.printCSV() + "," + userId + "\n";
         return output;
     }
 }

@@ -10,8 +10,9 @@ public class GameLocation {
         this.locationName = "Default";
     }
 
-    public void getLocationOwner(UserList users){
-        holder =  users.returnUserByName(locationName);
+
+    public void getLocationOwner(ComponentList users){
+        holder =  User.class.cast(users.returnItemByName(locationName));
     }
 
     public String getLocationInfo(){

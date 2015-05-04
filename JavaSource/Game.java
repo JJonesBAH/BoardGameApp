@@ -5,21 +5,20 @@ public class Game {
 
     private String name;
     private String description;
+    private static int idCounter = 1;
+    private int gameId;
 
 
     public Game (){
         this.name = "Default Name";
         this.description = "Default Description";
-    }
-
-    public Game(String inName){
-        this.name = inName;
-        this.description = "Default Description";
+        gameId = idCounter++;
     }
 
     public Game (String inName, String inDescription){
         this.name = inName;
         this.description = inDescription;
+        gameId = idCounter++;
     }
 
     public String getName(){
@@ -38,9 +37,21 @@ public class Game {
         this.description = inDescription;
     }
 
+    public int getGameId(){
+        return this.gameId;
+    }
+
     public String printCSV(){
         String output = "";
-        output += name + "," + description;
+        output += name + "," + description + "," + gameId + "\n";
+        return output;
+    }
+
+    public String printGameInfo(){
+        String output = "";
+        output += "\nGame Name: " + this.name + "\n" +
+                "Game Description: " + this.description + "\n" +
+                "Game Id: " + this.gameId + "\n";
         return output;
     }
 
